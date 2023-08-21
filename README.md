@@ -47,6 +47,7 @@ ChatGPT功能的实现依赖该非官方包，因此你需要在[OpenAI官网](h
 ### Quest2透视
 在PC端Oculus应用中，找到“Beta测试”，找到“通过Oculus Link透视”并打开，如图。
 <img src="https://github.com/midnightc160/Hunterian/assets/122289736/01be4014-4212-449e-9a54-cae37e2faed6" width="600" height="450">
+配置Oculus透视功能参考如下文章，点击[链接]()
 
 
 ## 使用方法
