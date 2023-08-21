@@ -44,16 +44,20 @@ ChatGPT功能的实现依赖该非官方包，因此你需要在[OpenAI官网](h
 ### [线程插件](https://github.com/PimDeWitte/UnityMainThreadDispatcherhttps://github.com/PimDeWitte/UnityMainThreadDispatcher)
 用于解决Unity输入栏的BUG
 
+### Quest2透视
+在PC端Oculus应用中，找到“Beta测试”，找到“通过Oculus Link透视”并打开，如图。
+<img src="https://github.com/midnightc160/Hunterian/assets/122289736/01be4014-4212-449e-9a54-cae37e2faed6" width="600" height="450">
+
+
 ## 使用方法
 该部分主要介绍用户需要自行修改的部分，以及如何运行该程序。
 
 ### 脚本参数修改
-双击打开“Assets”->"AIdialogue assets"->"Scenes"中的“AIdialogue”场景，找到左侧层级中的“ChatManager”(主要的脚本文件都在这边)。
+打开“Assets”->"AIdialogue assets"->"Scenes"中的“AIdialogue”场景，找到左侧层级中的“ChatManager”(主要的脚本文件都在这边)。
 
 在"Chat"脚本的inspector面板中，如图所示，用户需要输入自己的API Key，配置AI role等相关参数。当获得鼠标悬停在参数名称上时，可以获得具体的说明，例如“temperature”参数用以控制AI返回文本的随机性，取值区间为0~1，值越大返回的文本内容越随机。
 
 <img src="https://github.com/midnightc160/Hunterian/assets/122289736/15cfbf4f-b3a5-49ee-a2d0-60695f507aba" width="600" height="800">
-
 
 
 在Chat脚本内部需要为ChatGPT提供一些基本信息。
@@ -69,18 +73,12 @@ ChatGPT功能的实现依赖该非官方包，因此你需要在[OpenAI官网](h
 <img src="https://github.com/midnightc160/Hunterian/assets/122289736/3a62b1f8-961f-41a0-b0a5-8926a7ed8983" width="500" height="600">
 
 在"Text to Speech"脚本剩下的参数用于控制人物模型围观动作的幅度。
-
-
-
-
-
-
-
-
-
-
-### 指令修改
+### 程序运行
+打开“Assets”->"AIdialogue assets"->"Scenes"中的“AIdialogue”场景后，确保Quest2与PC通过USB线连接，连接状态可在Oculus应用中查看。在Quest2中，开启Oculus link功能，通过摁下手柄Home键，唤起菜单栏，在“+”号分类下，可以看到PC端中正在运行的程序，找到Unity Editor，点击播放即可查看功能。正如介绍所说，当应用被打包成.apk文件导入设备后，在“Unknown source”中找到“hunterian museum”的应用，开启后可以看到虚拟人物，但不能实现ChatGPT答案回传。
 
 ## 展示 
+演示demo，见[视频链接](https://www.bilibili.com/video/BV1CX4y1776Z/?spm_id_from=333.999.list.card_archive.click&vd_source=fb670f74498b9cca46fcf51a6780b29c)。这是在Unity Editor场景中看到的效果。在Quest2 实际看到的效果如图。
+
+![实际视角](https://github.com/midnightc160/Hunterian/assets/122289736/141c57a3-81fd-442e-b935-3c4b165cacf6)
 
 
