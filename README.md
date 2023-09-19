@@ -41,7 +41,7 @@ ChatGPT功能的实现依赖该非官方包，因此你需要在[OpenAI官网](h
 ### Vroid Studio & Vroid插件包
 该demo中，亨特博士的人物模型产自[Vroid Studio](https://vroid.com/en/studio)，整体风格偏卡通化，但模型设计易于上手；Vroid插件包用于调控人物面部的微表情，在[此处](https://github.com/vrm-c/UniVRM/releases/tag/v0.110.0)下载，并直接导入Unity项目中。
 
-### [线程插件](https://github.com/PimDeWitte/UnityMainThreadDispatcherhttps://github.com/PimDeWitte/UnityMainThreadDispatcher)
+### [线程插件](https://github.com/PimDeWitte/UnityMainThreadDispatcher)
 用于解决Unity输入栏的BUG
 
 ### Quest2透视
